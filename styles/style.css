@@ -1,0 +1,1664 @@
+/************ FONT ************/
+@font-face {
+    font-family: 'TradeGothicLTCom-BdCn20';
+    /** Helvetica, Arial, sans-serif **/
+    src: url(../polices/TradeGothicLTCom-BdCn20.woff);
+}
+
+@font-face {
+    font-family: 'TradeGothicLTCom-Cn18';
+    src: url(../polices/TradeGothicLTCom-Cn18.woff);
+}
+
+@font-face {
+    font-family: 'TradeGothicLTCom';
+    src: url(../polices/TradeGothicLTCom.woff);
+}
+
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+
+
+  /*----------------------------------------------*/
+ /*------------------HOME PAGE ------------------*/
+/*----------------------------------------------*/
+
+/********** HEADER *********/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin: 0;
+}
+
+.header__logo {
+    background-image: url(../images/logo_native_instument.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 15px;
+    width: 40px;
+    height: 30px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3px;
+    margin-right: 14px;
+    width: 120px;
+    height: 54px;
+}
+
+.header__icon a svg:hover {
+    fill: rgb(83, 138, 183);
+}
+
+.header__menu {
+    border: 1px solid #303030;
+    width: 85px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.header__menu__text {
+    font-size: 16px;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    margin-right: 5px;
+    color: #303030;
+}
+
+.header__menu__desktop {
+    display: none;
+}
+
+.header__hamburger {
+    display: block;
+}
+
+.header__hamburger__slices {
+    display: flex;
+    flex-direction: column;
+    width: 14px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #303030;
+    opacity: 1;
+}
+
+.header__hamburger span:nth-child(2) {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/******* BANNER *******/
+.main {
+    background-color: #eee;
+    padding-bottom: 20px;
+}
+
+.main__banner__content__desktop {
+    display: none;
+}
+
+.main__banner__content {
+    position: relative;
+}
+
+.main__banner__content img {
+    width: 100%;
+    height: auto;
+}
+
+.main__banner__text {
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+}
+
+.main__banner__content h2 {
+    color: #fff;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+}
+
+.main__banner__content p {
+    color: #fff;
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+.main__banner__info {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    padding: 5px 30px;
+    margin: 15px 0 5px 0;
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    display: inline-block;
+}
+
+/****** CARDS ******/
+.cards__container {
+    padding: 5px;
+}
+
+.cards__row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.cards__teaser {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cards__teaser a {
+    display: block;
+}
+
+.cards__teaser img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.cards__text {
+    display: block;
+    text-align: center;
+    color: #222;
+}
+
+.cards__text h3 {
+    letter-spacing: 0.05em;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.cards__text p {
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+/****** GRILLE ******/
+
+.grille__text {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 15px 20px 15px;
+
+}
+
+.grille__title h2 {
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    font-size: 1.875rem;
+    margin: 10px 0;
+}
+
+.grille__text__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    border-color: #222;
+    color: #f5f5f5;
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+    width: 178px;
+    height: 36px;
+    margin-top: 5px;
+}
+
+.grille__cards {
+    margin: 0 20px 15px 20px;
+    position: relative;
+}
+
+.grille__cards img {
+    width: 100%;
+    height: auto;
+}
+
+.grille__cards__title {
+    position: absolute;
+    margin-bottom: 12px;
+    margin-left: 15px;
+    letter-spacing: 0.05em;
+    font-size: 1.25rem;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    bottom: 0;
+    color: #fff;
+}
+
+/******* FOOTER ******/
+.footer {
+    background-color: #2a2c2e;
+}
+
+.footer__primary__container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+    color: #f5f5f5;
+}
+
+.footer__primary__container a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 0.875rem;
+    line-height: 2em;
+}
+
+.footer__primary__container a:hover {
+    color:#b0b0b0;
+}
+
+.footer__boutique {
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__boutique__title {
+    margin-bottom: 15px;
+}
+
+.footer__freeshipping {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__freeshipping a {
+    color: #398033;
+    font-size: 1rem;
+}
+
+.footer__freeshipping img {
+    width: 260px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.footer__reseaux {
+    display: none;
+}
+
+.footer__newsletter {
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.footer__group__input {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.footer__form__email {
+    font-size: 1rem;
+    padding: 9px 15px 8px 15px;
+    background-color: #3a3e41;
+    color: #f5f5f5;
+    border: 0;
+    width: 210px;
+}
+
+.footer__form__submit {
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    background-color: #515459;
+    border-color: #515459;
+    padding: 8px 14px 9px 14px;
+    border: 0;
+    width: 98px;
+    color: #f5f5f5;
+}
+
+#abonner, #dj, #producteur {
+    cursor: pointer;
+}
+
+.footer__group__checkbox {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer__checkbox__text {
+    font-size: 0.875rem;
+    line-height: 2em;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    margin-right: 20px;
+    margin-left: 7px;
+}
+
+.footer__checkbox {
+    display: flex;
+    align-items: center;
+}
+input[type='checkbox'] {
+    background: #52555a;
+    border-color: #52555a;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+}
+
+.footer__entreprise {
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.footer__entreprise ul {
+    margin-top: 15px;
+}
+
+.footer__secondary__container {
+    padding-bottom: 40px;
+    padding-top: 10px;
+    background: #333;
+    font-size: 1rem;
+}
+
+.footer__secondary__content {
+    color: #666;
+    font-size: 1rem;
+    font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+}
+
+.footer__secondary__content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer__secondary__content li {
+    line-height: 30px;
+}
+
+.footer__column__1, .footer__column__2, .footer__column__3 {
+    text-align: center;
+}
+
+.footer__secondary__content a {
+    color: #666;
+}
+
+.footer__secondary__content a:hover {
+    color: #b0b0b0;
+}
+
+/****** MEDIAQUERIES ******/
+@media (min-width: 480px) {
+    .grille__title h2{
+        font-size: 2.5rem;
+    }
+
+    .main__banner__text {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__logo {
+        background-image: url(../images/logo_native_instrument_complet.png);
+        width: 196px;
+    }
+
+    .header__menu__desktop {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__menu__desktop__text {
+        font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+        font-size: 1.125rem;
+        letter-spacing: 0.02em;
+        line-height: 2.5;
+        margin: 10px;
+        color: #303030;
+    }
+
+    .header__menu__desktop a:hover {
+        border-bottom: 3px solid #303030;
+
+    }
+
+    .main {
+        padding-bottom: 80px;
+    }
+
+    .main__banner__content {
+        display: none;
+    }
+
+    .main__banner__content__desktop {
+        display: block;
+        position: relative;
+    }
+
+    .main__banner__content__desktop img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main__banner__content__desktop h2 {
+        color: #fff;
+        font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+        font-size: calc(100vw / 1280 * 35);
+        letter-spacing: calc(100vw / 1280 * 1.5);
+    }
+    
+    .main__banner__content__desktop p {
+        color: #fff;
+        font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+        line-height: 1.4;
+        margin-top: 5px;
+        font-size: calc(100vw / 1280 * 24); 
+    }
+
+    .main__banner__text {
+        width: 100%;
+        top: 40%;
+        bottom: auto;
+    }
+
+    .cards__container {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 15px;
+    }
+
+    .cards__row {
+        display: flex;
+    }
+
+    .grille__container {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 50px 25px 50px;
+    }
+
+    .grille__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .grille__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grille__cards__row {
+        display: flex;
+    }
+
+    .footer__reseaux {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__primary__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 60px;
+    }
+
+    .footer__boutique {
+        margin-top: 0;
+    }
+
+    .footer__form {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer__entreprise {
+        margin-top: 0;
+        margin-right: 40px;
+    }
+
+    .footer__reseaux__title {
+        font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .footer__reseaux img {
+        margin: 15px;
+    }
+
+    .footer__group__checkbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__checkbox {
+        margin: 4px;
+    }
+
+    .footer__secondary__content ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__column__1 {
+        text-align: left;
+    }
+
+    .footer__column__3 {
+        text-align: right;
+    }
+}
+
+@media (min-width: 900px) {
+    .footer__boutique {
+        margin-left: 0;
+    }
+
+    .footer__entreprise {
+        margin-right: 0;
+    }
+
+    .footer__primary__container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header__logo {
+        margin-left: 25px;
+    }
+
+    .header__icon {
+        margin-right: 30px;
+    }
+
+    .header__menu__desktop__text {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .grille__container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .grille__cards__title h4 {
+        font-size: 1.5rem;
+    }
+
+    .footer__boutique {
+        margin-left: 40px;
+    }
+
+    .footer__entreprise {
+        margin-right: 40px;
+    }
+
+    .footer__primary__container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer__secondary__content ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+  /*--------------------------------------------*/
+ /*------------------ ID PAGE -----------------*/
+/*--------------------------------------------*/
+
+/****** FORM *****/
+.id__content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.id__exit__icon {
+    background: #fff;
+    border-radius: 100px;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    border: 6px solid #fff;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.id__title {
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.17px;
+    line-height: 20px;
+}
+
+input[type='email'], input[type='password'] {
+    padding: 14px;
+    height: auto;
+    width: auto;
+    border: none;
+}
+
+.id__input {
+    display: flex;
+    border: 1px solid #ccc;
+    width: 290px;
+    height: 50px;
+    margin: 30px 0 30px 0;
+}
+
+.id__input__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: #f1f1f1;
+}
+
+.id__password__forgot {
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+
+#submit {
+    background-color: #3E8CBB;
+    width: 290px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 25px 0 30px 0;
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+}
+
+.id__text {
+    font-size: 16px;
+    font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+    width: 230px;
+    text-align: center;
+    border-bottom-color: rgb(238, 238, 238);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-color: rgb(238, 238, 238);
+    border-top-style: solid;
+    border-top-width: 1px;
+    line-height: 20.8px;
+    margin: 10px 35px 35px;
+    padding: 32px 0px;
+}
+
+.id__text a {
+    text-decoration: none;
+    color: #3E8CBB;
+}
+
+.id__text a:hover {
+    color: #2c5a77;
+}
+
+.id__content img {
+    width: auto;
+}
+
+/****** MEDIAQUERIES ******/
+@media (min-width: 600px) {
+    .main__id__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .id__content {
+        background-color: white;
+        width: 600px;
+        height: 632px;
+    }
+
+    .id__title {
+        font-size: 24px;
+        margin: 20px;
+    }
+
+    .id__input {
+        width: 510px;
+    }
+
+    #submit {
+        width: 510px;
+        font-size: 16px;
+    }
+
+    .id__text {
+        width: 530px;
+    }
+}
+
+
+
+  /*----------------------------------------------*/
+ /*----------------- PRODUCT PAGE ---------------*/
+/*----------------------------------------------*/
+
+/******* BANNER IMG ******/
+.main__produit {
+    background-color: white;
+}
+
+.main__produit__banner h2 {
+    color: #fff;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+}
+
+.main__produit__banner__content__desktop {
+    display: none;
+}
+
+.main__produit__banner__content {
+    position: relative;
+    background-color: #000;
+}
+
+.main__produit__banner__content img {
+    width: 100%;
+    margin-bottom: -3px;
+}
+
+.main__produit__banner__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.main__produit__banner__text h2 {
+    font-size: 70px;
+    width: max-content;
+}
+
+/*********** BUY BANNER ************/
+.banner__kontakt__7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #384042;
+    height: 54px;
+}
+
+.banner__kontakt__7 h1 {
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    letter-spacing: .05em;
+    margin-left: 15px;
+}
+
+.banner__kontakt__7 a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.banner__kontakt__menu__desktop {
+    display: none;
+}
+
+.banner__container__buy__price {
+    display: none;
+}
+
+.banner__kontakt__menu {
+    margin-right: 30px;
+}
+
+.banner__kontakt__hamburger {
+    display: block;
+}
+
+.banner__kontakt__hamburger__slices {
+    display: flex;
+    flex-direction: column;
+    width: 14px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    opacity: 1;
+}
+
+.banner__kontakt__hamburger span:nth-child(2) {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.banner__buy {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__buy__price h1 {
+    line-height: 1.1;
+    font-size: 1.6rem;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    margin: 15px 0 7px 15px;
+}
+
+.banner__buy__maj {
+    display: flex;
+    margin: 0 0 0 15px;
+}
+
+.banner__buy__maj p {
+    font-size: 13px;
+    line-height: 1;
+    margin-right: 5px;
+    padding-top: 2px;
+    font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+}
+
+.banner__buy__maj span {
+    font-size: 1rem;
+    font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+
+}
+
+.banner__buy__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buy-btn__1 {
+    background-color: #3E8CBB;
+    cursor: pointer;
+    display: block;
+    color: #f5f5f5;
+    height: 45px;
+    border: none;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px 14px 20px 14px;
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+}
+
+#buy-btn__2 {
+    cursor: pointer;
+    background-color: #3E8CBB;
+    color: #f5f5f5;
+    height: 45px;
+    border: none;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    width: 100%;
+    margin: 20px 14px 20px 14px;
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+}
+
+/*********** PRESENTATION **********/
+.produit__content {
+    background-color: #000;
+    padding-top: 3px;
+}
+
+.produit__block__desktop {
+    display: none;
+}
+
+.produit__block a {
+    padding: 7px 13px;
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #000;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+    display: inline-block;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.produit__block h1 {
+    color: #f5f5f5;
+    font-size: 42px;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 1.2;
+    margin: 10px 0 10px 0;
+}
+
+.produit__block h2 {
+    color: #f5f5f5;
+    margin: 10px 0 10px 0;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    font-size: 1.875rem;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+}
+
+.produit__block p {
+    color: #f5f5f5;
+    font-size: 1em;
+    line-height: 1.8;
+    font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+}
+
+.produit__block div {
+    text-align: center;
+}
+
+.produit__block__1 {
+    margin: 40px 25px 25px 25px;
+
+}
+.produit__block__1 p {
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+}
+
+.produit__block img {
+    max-width: 100%;
+}
+
+.produit__block__2 {
+    margin: 10px 25px 25px 25px;
+}
+
+.produit__block__3 {
+    margin: 130px 25px 25px 25px;
+}
+
+.produit__block__4 {
+    margin: 200px 25px 25px 25px;
+}
+
+.produit__block__5 {
+    margin: 10px 25px 25px 25px;
+}
+
+.produit__block__6 {
+    margin: 10px 25px 25px 25px;
+}
+
+.produit__block__7 {
+    margin: 10px 25px 25px 25px;
+}
+
+.produit__block__8 {
+    margin: 10px 60px 25px 60px;
+}
+
+.produit__block .produit__block__4, .produit__block .produit__block__5, .produit__block .produit__block__7, .produit__block .produit__block__8 {
+    text-align: left;
+}
+
+/****** CARDS ******/
+.produit__title {
+    width: 100%;
+    font-size: 1.875rem;
+    line-height: 1rem;
+    letter-spacing: .01em;
+    text-align: center;
+    margin: 40px 0 15px 0;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+}
+
+.produit__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.produit__cards__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 15px 30px 15px;
+
+    border: 1px solid #ddd;
+}
+
+.produit__cards__content a {
+    text-decoration: none;
+    color: #222;
+}
+
+.produit__cards__img img {
+    width: 100%;
+}
+
+.produit__cards__title {
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    margin: 25px 0 15px 0;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+}
+
+.produit__cards__text {
+    font-size: 0.875rem;
+    height: 100px;
+    line-height: 1.6em;
+    text-align: center;
+    margin: 0 18px 20px 18px;
+    font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+}
+
+.produit__cards__price {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.produit__cards__price p {
+    font-size: 0.75rem;
+    line-height: 1;
+    font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+}
+
+.produit__cards__price span {
+    font-size: 1em;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    padding-top: 8px;
+    display: block;
+    font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+}
+
+.produit__cards__price__maj {
+    text-align: center;
+}
+
+.produit__cards__price__complet {
+    text-align: center;
+}
+
+.produit__s88__price {
+    margin-top: 20px;
+}
+
+.produit__buy__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.produit__buy__button a {
+    color: white;
+}
+
+#buy-btn__kontakt {
+    background-color: #3E8CBB;
+    height: 35px;
+    cursor: pointer;
+    color: #f5f5f5;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    margin: 20px 14px 20px 14px;
+    padding: 0 12px 0 12px;
+    font-family: 'TradeGothicLTCom-Cn18', Helvetica, Arial, sans-serif;
+}
+
+.produit__footer__img__desktop img{
+    display: none;
+}
+
+.produit__footer {
+    width: 100%;
+}
+
+.produit__footer__img {
+    margin: 0 15px 0 15px;
+}
+
+.produit__footer__img img {
+    width: 100%;
+}
+
+.produit__footer__text {
+    line-height: 1.8;
+    font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    margin: 10px 15px 60px 15px;
+}
+
+.produit__footer__text a {
+    text-decoration: none;
+    color: #3E8CBB;
+}
+
+/******* MEDIAQUERIES *****/
+@media (min-width: 480px) {
+    .main__produit__banner__content {
+        display: none;
+    }
+
+    .main__produit__banner__content__desktop {
+        display: block;
+        position: relative;
+        background-color: #000;
+    }
+    
+    .main__produit__banner__content__desktop img {
+        width: 100%;
+        margin-bottom: -3px;
+    }
+    
+    .main__produit__banner__text h2 {
+        font-size: 45px;
+    }   
+}
+
+@media (min-width: 560px) {
+    .banner__buy {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    #buy-btn__2 {
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .banner__buy__button {
+        display: block;
+        width: auto;
+    }
+
+    .buy-banner__buy__button {
+        width: 92px;
+        height: 45px;
+    }
+
+    .banner__buy__maj {
+        margin-bottom: 17px;
+    }
+
+    .produit__cards__content {
+        margin: 60px 30px 60px 30px;
+        max-width: 438px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 767px) {
+    .banner__buy {
+        display: none;
+    }
+
+    .banner__kontakt__menu__link {
+        display: none;
+    }
+    
+    .banner__kontakt__7 {
+        height: 65px;
+    }
+
+    .banner__kontakt__7 h1 {
+        font-size: 30px;
+    }
+
+    .banner__kontakt__menu__desktop{
+        display: block;
+    }
+
+    .banner__kontakt__menu__desktop span {
+        letter-spacing: 0.02em;
+        color: #f5f5f5;
+        font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-right: 20px;
+    }
+
+    .banner__kontakt__menu__desktop a:hover {
+        border-bottom: 2px solid #ccc;
+    }
+
+    .banner__container__buy__price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .banner__buy__price {
+        color: #f5f5f5;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .banner__buy__price h1 {
+        text-align: right;
+        margin: 0;
+        width: 100%;
+        font-size: 1rem;
+        align-self: center;
+        font-family: 'TradeGothicLTCom', Helvetica, Arial, sans-serif;
+    }
+
+    .banner__buy__maj span {
+        font-size: 1rem;
+        align-self: center;
+    }
+
+    .banner__buy__maj {
+        margin: 5px 0 0 0;
+    }
+
+    .produit__block h1 {
+        font-size: 52px;
+    }
+}
+
+@media (min-width: 991px) {
+    .main__produit__banner__text h2 {
+        font-size: 8rem;
+        letter-spacing: 0.07em;
+    }
+
+    .banner__buy__maj p {
+        margin: 0 5px 0 0;
+    }
+
+    .produit__block__desktop {
+        display: block;
+    }
+
+    .produit__block div {
+        padding: 0;
+        text-align: initial;
+    }
+
+    .produit__block h1 {
+        padding-top: 80px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .produit__block h2 {
+        font-size: 40px;
+    }
+
+    .produit__block__1 p {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 180px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .produit__block__2 p {
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 280px;
+        text-align: center;
+    }
+
+    .produit__block__3 h2 {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .produit__block__3 p {
+        text-align: center;
+        margin: 20px 30px 100px 30px;
+    }
+
+    .produit__block__smartphone {
+        display: none;
+    }
+
+    .produit__block__4__desktop {
+        position: relative;
+    }
+
+    .produit__block__4__desktop__img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .produit__block__4__desktop__text__container {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .produit__block__4__desktop__text__content {
+        margin-left: 50%;
+        margin-right: 30px;
+    }
+
+    .produit__block__4__desktop__text__content p {
+        text-align: left;
+    }
+
+    .produit__block__4__desktop__text__content h2 {
+        margin: 10px;
+    }
+
+    .produit__block__5__desktop {
+        position: relative;
+        margin-top: -3px;
+    }
+
+    .produit__block__5__desktop__img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .produit__block__5__desktop__text__container {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .produit__block__5__desktop__text__content {
+        margin-right: 50%;
+        margin-left: 30px;
+    }
+
+    .produit__block__5__desktop__text__content p {
+        text-align: left;
+    }
+
+    .produit__block__5__desktop__text__content h2 {
+        margin: 10px;
+    }
+
+    .produit__block__6__desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+    }
+
+    .produit__block__6__desktop h2, p {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .produit__block__img img {
+        width: 100%;
+    }
+
+    .produit__block__7__desktop {
+        position: relative;
+    }
+
+    .produit__block__7__desktop__img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .produit__block__7__desktop__text__container {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .produit__block__7__desktop__text__content {
+        margin-left: 55%;
+        margin-right: 30px;
+    }
+
+    .produit__block__7__desktop__text__content p {
+        text-align: left;
+    }
+
+    .produit__block__7__desktop__text__content h2 {
+        margin: 10px;
+    }
+
+    .produit__block__8__desktop {
+        position: relative;
+        margin-top: -3px;
+    }
+
+    .produit__block__8__desktop__img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .produit__block__8__desktop__text__container {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .produit__block__8__desktop__text__content {
+        margin-right: 55%;
+        margin-left: 30px;
+    }
+
+    .produit__block__8__desktop__text__content p {
+        text-align: left;
+    }
+
+    .produit__block__8__desktop__text__content h2 {
+        margin: 10px;
+    }
+
+    .produit__block__9 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produit__title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-top: 80px;
+    }
+
+    .produit__cards {
+        flex-direction: row;
+    }
+    
+    .produit__footer__img img{
+        display: none;
+    }
+
+    .produit__footer__img__desktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    .produit__footer__img__desktop img{
+        display: block;
+        width: 90%;
+    }
+
+    .footer__primary__container {
+        display: none;
+    }
+ 
+}
+
+
+  /*---------------------------------------------*/
+ /*-------------- PAGE NOT FOUND ---------------*/
+/*---------------------------------------------*/
+.page__not__found {
+    height: 60px;
+    width: 100%;
+    background-color: #2a2c2e;
+    display: flex;
+    align-items: center;
+}
+
+.page__not__found__text {
+    color: #f5f5f5;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.3;
+    letter-spacing: .05em;
+    margin-left: 30px;
+}
+
+
+.page__404 {
+    background-color: rgb(255, 189, 173);
+
+}
+.page__404 img{
+    width: 100%;
+}
+
+.page__404__text {
+    letter-spacing: 0.05em;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    color: #000;
+    font-family: 'TradeGothicLTCom-BdCn20', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px
+}
+
+.page__404__text p {
+    font-size: 1rem;
+    margin: 25px 0 40px 0;
+    color: #000
+}
+
+.page__404__text a {
+    color: #f5f5f5;
+    border: 1px solid #3E8CBB;
+    background-color: #3E8CBB;
+    padding: 5px 20px 5px 20px;
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+}
+
+.page__404__text a:hover {
+    border: 1px solid #a83d04;
+    background-color: #a83d04;
+}
+
+@media (min-width: 766px) {
+    .page__404__text h1 {
+        font-size: 2.5rem;
+    }
+
+    .page__404__text p {
+        font-size: 1.2rem;
+        margin: 40px 0 50px 0;
+    }
+    .page__404__text a {
+        font-size: 1.2rem;
+        padding: 15px 40px 15px 40px;
+        margin-bottom: 40px;
+    }
+}
